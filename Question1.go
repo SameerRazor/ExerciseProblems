@@ -86,7 +86,7 @@ func (m *Matrix) SetElements(i, j, value int) {
 }
 
 func (m Matrix) AddMatrix(matrix2 Matrix) Matrix{
-	result := m 
+	result := m //It passes the location of the struct m
 	for i := 0; i<m.Rows; i++{
 		for j := 0; j<m.Columns; j++{
 			result.Elements[i][j]+=matrix2.Elements[i][j]
